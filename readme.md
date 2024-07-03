@@ -1,4 +1,3 @@
-```markdown
 # Loyverse Data Reports Scraper
 
 This project is a web scraper for extracting report sales by item data from the Loyverse dashboard using Selenium and saving the data to an Excel file.
@@ -23,9 +22,16 @@ This project is a web scraper for extracting report sales by item data from the 
 
 2. **Create and activate a virtual environment:**
 
+   **Mac/Linux:**
    ```sh
    python3 -m venv venv
    source venv/bin/activate
+   ```
+
+   **Windows:**
+   ```sh
+   python -m venv venv
+   .\venv\Scripts\activate
    ```
 
 3. **Install the required dependencies:**
@@ -34,11 +40,20 @@ This project is a web scraper for extracting report sales by item data from the 
    pip install -r requirements.txt
    ```
 
-4. **Install Chromedriver via Homebrew:**
+4. **Install Chromedriver:**
 
+   **Mac:**
    ```sh
    brew install chromedriver
    ```
+
+   **Linux:**
+   ```sh
+   sudo apt-get install chromium-chromedriver
+   ```
+
+   **Windows:**
+   Download Chromedriver from [official site](https://sites.google.com/chromium.org/driver/) and add to system path.
 
 5. **Create a `.env` file in the root directory and add your login credentials:**
 
@@ -52,7 +67,7 @@ This project is a web scraper for extracting report sales by item data from the 
 1. **Run the scraper script:**
 
    ```sh
-   python scraper.py
+   python main.py
    ```
 
    This will open a Chrome browser, log into Loyverse, navigate to the sales report page, and save the data to `loyverse_data.xlsx`.
@@ -93,7 +108,3 @@ pip install -r requirements.txt
 
 This project is licensed under the MIT License.
 ```
-
-### Save the README file
-
-Save the content above to a file named `README.md` in the root directory of your project. This provides essential information about your project, making it easier for others (and yourself) to understand and use the project.
