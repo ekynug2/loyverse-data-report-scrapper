@@ -18,10 +18,10 @@ PASSWORD = os.getenv('PASSWORD')
 
 # Set up Chrome options
 options = Options()
-options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+options.binary_location = "Change with your chrome app file"
 
 # Set up the Chrome WebDriver service
-service = Service('/opt/homebrew/bin/chromedriver')  # Make sure this path is correct
+service = Service('change path webdriver file')  # Make sure this path is correct
 options = Options()
 options.add_argument('--no-sandbox')
 options.add_argument('--disable-dev-shm-usage')
